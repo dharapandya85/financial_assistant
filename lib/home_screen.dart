@@ -39,7 +39,7 @@ Future<void> sendMessage(String message) async {
 
   });
   _listKey.currentState?.insertItem(_messages.length - 1);
-  final Uri url = Uri.parse("https://web-production-5bb8.up.railway.app/bot");
+  final Uri url = Uri.parse("YOUR_DEPLOYED_APP_URL");
   try {
     final response = await http.post(
       url,
